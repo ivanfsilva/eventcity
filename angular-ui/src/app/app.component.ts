@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-ui';
+  cidades = [
+    { cidade: 'Rio de Janeiro' },
+    { cidade: 'São Paulo' },
+    { cidade: 'Belo Horizonte' }
+  ];
 }
