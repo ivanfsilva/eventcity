@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-cities-search',
-  templateUrl: './cities-search.component.html',
-  styleUrls: ['./cities-search.component.css']
+  selector: `app-cidades-pesquisa`,
+  templateUrl: './cidades-pesquisa.component.html',
+  styleUrls: ['./cidades-pesquisa.component.css']
 })
-export class CitiesSearchComponent {
+export class CidadesPesquisaComponent {
 
   cidades = [
     { cidade: 'Rio de Janeiro' },

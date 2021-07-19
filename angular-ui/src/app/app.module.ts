@@ -7,23 +7,29 @@ import { ButtonModule } from 'primeng/button';
 import { AppComponent } from './app.component';
 import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
-import { CitiesSearchComponent } from './cities-search/cities-search.component';
+import { CidadesPesquisaComponent } from './cidades-pesquisa/cidades-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BackgroudColorInputDirective } from './backgroud-color-input.directive';
+import { CidadeCadastroComponent } from './cidade-cadastro/cidade-cadastro.component';
+import { DropdownModule } from 'primeng/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CitiesSearchComponent,
+    CidadesPesquisaComponent,
     NavbarComponent,
-    BackgroudColorInputDirective
+    BackgroudColorInputDirective,
+    CidadeCadastroComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     InputTextModule,
     ButtonModule,
     TableModule,
-    TooltipModule
+    TooltipModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
