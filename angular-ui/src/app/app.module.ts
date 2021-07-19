@@ -6,16 +6,20 @@ import { ButtonModule } from 'primeng/button';
 
 import { AppComponent } from './app.component';
 import { TableModule } from 'primeng/table';
+import { TooltipModule } from 'primeng/tooltip';
+import { CitiesSearchComponent } from './cities-search/cities-search.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CitiesSearchComponent
   ],
   imports: [
     BrowserModule,
     InputTextModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
