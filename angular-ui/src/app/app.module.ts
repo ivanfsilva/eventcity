@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
 import { CitiesSearchComponent } from './cities-search/cities-search.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CitiesSearchComponent
+    CitiesSearchComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
