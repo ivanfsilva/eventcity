@@ -9,12 +9,14 @@ import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
 import { CitiesSearchComponent } from './cities-search/cities-search.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { BackgroudColorInputDirective } from './backgroud-color-input.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     CitiesSearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    BackgroudColorInputDirective
   ],
   imports: [
     BrowserModule,
