@@ -1,5 +1,5 @@
 <div class="container">
-  <form>
+  <form autocomplete="off">
     <div class="p-grid">
       <div class="p-col-12">
         <h1>Nova Cidade</h1>
@@ -12,7 +12,17 @@
 
       <div class="p-col-12 p-md-6 p-fluid">
         <label>Cidade</label>
-        <input pInputText type="text">
+        <input pInputText type="text" name="cidade"
+               ngModel #cidade="ngModel" required minlength="5">
+
+        <div *ngIf="cidade.hasError('required') && cidade.dirty"
+             class="p-message p-message-error">
+          Informe uma cidade
+        </div>
+        <div *ngIf="cidade.hasError('minlength') && cidade.dirty"
+             class="p-message p-message-error">
+          Mínimo de {{ cidade.errors.minlength.requiredLength }} caracteres. Você digitou apenas {{ cidade.errors.minlength.actualLength }}
+        </div>
       </div>
       <div class="p-col-12">
         <button pButton type="submit" label="Salvar"></button>

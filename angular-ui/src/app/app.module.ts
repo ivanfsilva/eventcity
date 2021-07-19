@@ -13,6 +13,7 @@ import { BackgroudColorInputDirective } from './backgroud-color-input.directive'
 import { CidadeCadastroComponent } from './cidade-cadastro/cidade-cadastro.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ButtonModule,
     TableModule,
     TooltipModule,
-    DropdownModule
+    DropdownModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
