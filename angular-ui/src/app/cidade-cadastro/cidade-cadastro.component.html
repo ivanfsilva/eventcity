@@ -15,14 +15,9 @@
         <input pInputText type="text" name="cidade"
                ngModel #cidade="ngModel" required minlength="5">
 
-        <div *ngIf="cidade.hasError('required') && cidade.dirty"
-             class="p-message p-message-error">
-          Informe uma cidade
-        </div>
-        <div *ngIf="cidade.hasError('minlength') && cidade.dirty"
-             class="p-message p-message-error">
-          Mínimo de {{ cidade.errors.minlength.requiredLength }} caracteres. Você digitou apenas {{ cidade.errors.minlength.actualLength }}
-        </div>
+        <app-message [control]="cidade" error="required" text="Informe uma cidade"></app-message>
+        <app-message [control]="cidade" error="minlength"
+           text="Mínimo de {{ cidade.errors?.minlength?.requiredLength }} caracteres. Você digitou apenas {{ cidade.errors?.minlength?.actualLength }}"></app-message>
       </div>
       <div class="p-col-12">
         <button pButton type="submit" label="Salvar"></button>

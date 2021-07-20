@@ -14,6 +14,7 @@ import { CidadeCadastroComponent } from './cidade-cadastro/cidade-cadastro.compo
 import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     CidadesPesquisaComponent,
     NavbarComponent,
     BackgroudColorInputDirective,
-    CidadeCadastroComponent
+    CidadeCadastroComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
