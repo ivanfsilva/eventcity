@@ -1,39 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-
-import { AppComponent } from './app.component';
-import { TableModule } from 'primeng/table';
-import { TooltipModule } from 'primeng/tooltip';
-import { CidadesPesquisaComponent } from './cidades-pesquisa/cidades-pesquisa.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { BackgroudColorInputDirective } from './backgroud-color-input.directive';
-import { CidadeCadastroComponent } from './cidade-cadastro/cidade-cadastro.component';
-import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { MessageComponent } from './message/message.component';
+
+import { AppComponent } from './app.component';
+
+import { CidadesModule } from './cidades/cidades.module';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CidadesPesquisaComponent,
-    NavbarComponent,
-    BackgroudColorInputDirective,
-    CidadeCadastroComponent,
-    MessageComponent
+
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    InputTextModule,
-    ButtonModule,
-    TableModule,
-    TooltipModule,
-    DropdownModule,
-    FormsModule
+    FormsModule,
+
+    CidadesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
