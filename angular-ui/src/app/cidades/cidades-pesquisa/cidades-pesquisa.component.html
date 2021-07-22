@@ -17,7 +17,7 @@
     <div class="ui-g">
       <div class="ui-g-3">
         <p-table [value]="cidades" styleClass="p-datatable-striped"
-                 [responsive]="true" [paginator]="true" [rows]="2">
+                 [responsive]="true" [paginator]="true" [rows]="5">
           <ng-template pTemplate="header">
             <tr>
               <th>Nome da Cidade</th>
@@ -26,7 +26,10 @@
           </ng-template>
           <ng-template pTemplate="body" let-cidade>
             <tr>
-              <td>{{ cidade.cidade }}</td>
+              <td>
+                <span class="p-column-title">Nome da Cidade</span>
+                {{ cidade.name }}
+              </td>
               <td class="col-acoes">
                 <a pButton icon="pi pi-pencil" pTooltip="Editar" tooltipPosition="top"></a>
                 <button pButton icon="pi pi-trash" pTooltip="Excluir" tooltipPosition="top"></button>

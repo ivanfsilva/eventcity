@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 
 import { CidadesModule } from './cidades/cidades.module';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CidadeService } from './cidades/cidade.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,11 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule,
+    HttpClientModule,
 
     CidadesModule
   ],
-  providers: [],
+  providers: [CidadeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
